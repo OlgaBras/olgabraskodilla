@@ -24,8 +24,9 @@ class CalculatorTestSuite {
         //then
         Assertions.assertEquals(expected:10, result);
     }
-        @Test
-        public void shouldReturnPowGreaterThanZero() {
+
+    @Test
+    public void shouldReturnPowGreaterThanZero() {
         //given
         Calculator calculator = new Calculator();
         //when
@@ -33,8 +34,9 @@ class CalculatorTestSuite {
         //then
         Assertions.assertEquals(expected:49, result);
     }
-        @Test
-        public void shouldReturnPowEuqalToZero() {
+
+    @Test
+    public void shouldReturnPowEuqalToZero() {
         //given
         Calculator calculator = new Calculator();
         //when
@@ -42,8 +44,9 @@ class CalculatorTestSuite {
         //then
         Assertions.assertEquals(expected:0, result);
     }
-        @Test
-        public void shouldReturnPowLessThanZero() {
+
+    @Test
+    public void shouldReturnPowLessThanZero() {
         //given
         Calculator calculator = new Calculator();
         //when
@@ -52,5 +55,4 @@ class CalculatorTestSuite {
         Assertions.assertEquals(expected:9, result);
     }
 }
-
 
