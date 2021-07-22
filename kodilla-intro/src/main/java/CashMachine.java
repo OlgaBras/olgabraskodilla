@@ -19,4 +19,35 @@ public class CashMachine {
     }
     return result;
     }
+    public int numberOfPayOut() {
+        int count = 0;
+        for(int i=0; i<this.size; i++) {
+            int transaction = this.transactions[i];
+            if (transaction <0) {
+                count++;
+            }
+        }
+        return count;
+    }
+    public int numberOfPayIn() {
+        int count = 0;
+        for (int i = 0; i < this.size; i++) {
+            if(this.transactions[i] > 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+    public int sumOfPayOut() {
+        int sum = 0;
+        for (int i = 0; i < this.size; i++) {
+            int transaction = this.transactions[i];
+            if (transaction < 0) {
+                sum += transaction;
+            }
+        }
+        sum = sum * (-1);
+        return sum;
+    }
+
 }
